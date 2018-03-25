@@ -2,13 +2,21 @@
   //Import Modules
   import { NgModule } from "@angular/core";
   import { BrowserModule } from "@angular/platform-browser";
+  import { FormsModule } from "@angular/forms"
 
   //Import Components
   import { AppComponent } from "./app.component";
+  import { CardComponent} from "./card/card.component";
 
   @NgModule({
-    imports: [ BrowserModule ],
-    declarations: [ AppComponent ],
+    imports: [
+              BrowserModule,
+              FormsModule
+              ],
+    declarations: [
+                    AppComponent,
+                    CardComponent
+                  ],
     bootstrap: [ AppComponent ]
   })
 
